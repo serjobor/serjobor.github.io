@@ -148,6 +148,15 @@ body {
     gap: 50px;
     
 }
+.contacts-links img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.contacts-links img:active{
+    transform: scale(1);
+    transition: 0.3s;
+}
 
 .section-links {
     text-decoration: none;
