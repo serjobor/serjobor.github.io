@@ -1,162 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>serjo</title>
+  <title>serjo</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/serjoro.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/serjoro.ico">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about-me" class="nav-links">About me</a></li>
+        <li class="nav-item"><a href="#education" class="nav-links">Education</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-links">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-links">Projects</a></li>
+        <li class="nav-item"><a href="#personal-qualities" class="nav-links">Personal qualities</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-links">Languages</a></li>
+      </ul>
+    </nav>
+    <div class="toggle">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
 
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#about-me" class="nav-links">About me</a></li>
-                <li class="nav-item"><a href="#education" class="nav-links">Education</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-links">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-links">Projects</a></li>
-                <li class="nav-item"><a href="#personal-qualities" class="nav-links">Personal qualities</a></li>
-                <li class="nav-item"><a href="#languages" class="nav-links">Languages</a></li>
-            </ul>
-        </nav>
-        <div class="toggle">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section section-profile">
+        <img src="assets/img/serjo.jpg" alt="Error! The photo didn't load!" class="profile-photo">
+      </section>
 
-    <main class="main">
-        <div class="container main-container">
+      <section class="section contacts" id="contacts">
+        <h1 class="main-title">Hi, I&#8217;m Serjo</h1>
+        <h2 class="section-subtitle">junior developer</h2>
 
-            <section class="section section-profile">
-                <img src="assets/img/serjo.jpg" alt="Error! The photo didn't load!" class="profile-photo">
-            </section>
+        <section class="contacts-list">
+          <a href="mailto:serjobor@yandex.ru" class="contacts-links">
+            <img src="./assets/ico/email-ico.png" alt="Error! The email-ico didn't load!">
+          </a>
 
-            <section class="section contacts" id="contacts">
-                <h1 class="main-title">Hi, I&#8217;m Serjo</h1>
-                <h2 class="section-subtitle">junior developer</h2>
-                <!-- <h2 class="section-title">Contacts</h2> -->
+          <a href="https://github.com/serjobor" class="contacts-links" target="_blank">
+            <img src="./assets/ico/github-ico.png" alt="Error! The github-ico didn't load!">
+          </a>
 
-                <section class="contacts-list">
-                    <a href="mailto:serjobor@yandex.ru" class="contacts-links">
-                        <img src="./assets/ico/email-ico.png" alt="Error! The email-ico didn't load!">
-                    </a>
+          <a href="https://t.me/serjobor" class="contacts-links" target="_blank">
+            <img src="./assets/ico/telegram-ico.png" alt="Error! The telegram-ico didn't load!">
+          </a>
+        </section>
 
-                    <a href="https://github.com/serjobor" class="contacts-links" target="_blank">
-                        <img src="./assets/ico/github-ico.png" alt="Error! The github-ico didn't load!">
-                    </a>
+      </section>
 
-                    <a href="https://t.me/serjobor" class="contacts-links" target="_blank">
-                        <img src="./assets/ico/telegram-ico.png" alt="Error! The telegram-ico didn't load!">
-                    </a>
-                </section>
+      <section class="section text-justify" id="about-me">
+        <h2 class="section-title">About me</h2>
+        
+        <span>I graduated with honors from my bachelor's degree. During my studies, I managed to try myself in the following areas:</span>
+        
+        <ul class="work-list">
+          <li class="work-item">Writing window and console applications using algorithms and data processing structures, OOP (C/C++)</li>
+          <li class="work-item">Working with relational databases: creating Databases, tables, writing queries, triggers and functions (Access; DBeaver + Python)</li>
+          <li class="work-item">Website layout using HTML, CSS and JS.</li>
+        </ul>
 
-                <!-- <ul class="contacts-list">
-                    <li class="contacts-item">
-                        
-                    </li>
-                    <li class="contacts-item">
-                        
-                    </li>
-                    <li class="contacts-item">
-                        
-                    </li>
-                </ul> -->
-            </section>
+        <span>I am currently studying for a master's degree at the ITMO Institute, where I am actively studying web-technologies and continuing to consolidate the knowledge I have already gained.</span>
+        
+      </section>
+      
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
 
-            <section class="section text-justify" id="about-me">
-                <h2 class="section-title">About me</h2>
-                
-                <span>At the moment I am a graduate. During the training, I managed to try myself in the following:</span>
-                
-                <ul class="work-list">
-                    <li class="work-item">Writing window and console applications using algorithms and data processing structures, OOP (C/C++)</li>
-                    <li class="work-item">Working with relational databases: creating Databases, tables, writing queries, triggers and functions (Access; DBeaver + Python)</li>
-                    <li class="work-item">Website layout using HTML, CSS and JS.</li>
-                </ul>
+        <ul class="section-list">
+          <li class="">
+            <b>Bachelor&#8217;s degree</b> from 
+            <a href="https://guap.ru/" class="section-links" target="_blank">SUAI</a>  
+            (budget, 2020-2024)
+          </li>
+          <li class="section-item">Faculty: Institute of Fundamental Training and Technological Innovations</li>
+          <li class="section-item">Specialty: <b>Applied Mathematics and Computer Science</b> </li>
+          <li class="section-item">Average score: <b>5.0</b></li>
+        </ul>
 
-                <span>Now I am actively studying frontend development, testing and continue to strengthen the knowledge I have already gained.</span>
-                
-            </section>
-            
-            <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
+        <br>
 
-                <ul class="section-list">
-                    <li class="">I have a bachelor&#8217;s degree with honors.</li>
-                    <li class="section-item"><b class="education-title">Institute:</b> St. Petersburg State University of Aerospace Instrumentation. <a href="https://guap.ru/" class="section-links" target="_blank">(SUAI)</a></li>
-                    <li class="section-item"><b class="education-title">Faculty:</b> Institute of Fundamental Training and Technological Innovations.</li>
-                    <li class="section-item"><b class="education-title">Specialty:</b> Applied Mathematics and Computer Science.</li>
-                    <li class="section-item"><b class="education-title">Average score:</b> 4.91.</li>
-                </ul>
-            </section>
+        <ul class="section-list">
+          <li class="">
+            <b>Master&#8217;s degree</b> from 
+            <a href="https://itmo.ru/" class="section-links" target="_blank">ITMO</a>  
+            (budget, 2024-2026)
+          </li>
+          <li class="section-item">Faculty: I: Software Engineering and Computer Engineering</li>
+          <li class="section-item">Specialty: <b>Web technologies</b> </li>
+          <li class="section-item">Average score: <b>5.0</b></li>
+        </ul>
+      </section>
 
-            <section class="section" id="skills">
-                <h2 class="section-title">Skills</h2>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
 
-                <ul class="section-list">
-                    <li class="section-item">Languages: C/C++,  JavaScript</li>
-                    <li class="section-item">Web: HTML, CSS</li>
-                    <li class="section-item">Databases: SQL, DBeaver</li>
-                    <li class="section-item">Version control: GIT, Github</li>
-                    <li class="section-item">Computer science: Algorithms, Data Structures, OOP</li>
+        <ul class="section-list">
+          <li class="section-item">Languages:     <b>C/C++,  JavaScript</b></li>
+          <li class="section-item">Web:         <b>HTML, CSS</b></li>
+          <li class="section-item">Databases:     <b>SQL, DBeaver</b></li>
+          <li class="section-item">Version control:   <b>GIT, Github</b></li>
+          <li class="section-item">Computer science:  <b>Algorithms, Data Structures, OOP</b></li>
+          <li class="section-item">Network:       <b>Client-Server Architecture, HTTP, JSON</b></li>
+          <li class="section-item">Tools:       <b>Chrome Devtools</b></li>
+          <!-- <li class="section-item">Methodologies: Agile, Scrum, Kanban</li> -->
+        </ul>
+      </section>
+      
+      <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
 
-                    <li class="section-item">Network: Client-Server Architecture, HTTP, JSON</li>
-                    <li class="section-item">Tools: Chrome Devtools</li>
-                    <li class="section-item">Methodologies: Agile, Scrum, Kanban</li>
-                </ul>
-            </section>
-            
-            <section class="section" id="projects">
-                <h2 class="section-title">Projects</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              Website:
+              <a href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/christmas-shop/" class="section-links" target="_blank">Christmas Shop</a>
+              Design in
+              <a href="https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Christmas-Shop" class="section-links" target="_blank">figma</a>
+            </li>
 
-                    <ul class="section-list">
-                        <li class="section-item"><a href="https://github.com/serjobor/Tetris" class="section-links" target="_blank">Tetris (required decoration the repository)</a></li>
-                        <li class="section-item"><a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/shelter" class="section-links" target="_blank">Shelter</a></li>
-                        <li class="section-item"><a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/audio-player/" class="section-links" target="_blank">audio-player</a></li>
-                        <li class="section-item"><a href="https://serjobor.github.io/cssMemeSlider/cssMemeSlider/index.html" class="section-links" target="_blank">cssMemeSlider</a></li>
-                        <li class="section-item"><a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/image-gallery/" class="section-links" target="_blank">image-gallery</a></li>
+            <li class="section-item">
+              Website:
+              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/shelter" class="section-links" target="_blank">Shelter</a>
+              Design in
+              <a href="https://www.figma.com/design/Yk6EnbY63FyG2PJTFkJDMh/shelter" class="section-links" target="_blank">figma</a>
+            </li>
 
-                    </ul> 
-            </section>
+            <li class="section-item">
+              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/audio-player/" class="section-links" target="_blank">Audio Player</a>
+            </li>
 
-            <section class="section" id="personal-qualities">
-                <h2 class="section-title">Personal qualities</h2>
+            <li class="section-item">
+              <a href="https://serjobor.github.io/cssMemeSlider/cssMemeSlider/index.html" class="section-links" target="_blank">Only CSS Slider</a>
+            </li>
 
-                <ul class="section-list">
-                    <li class="section-item">Responsible</li>
-                    <li class="section-item">Attentive</li>
-                    <li class="section-item">Punctual</li>
-                </ul>
-            </section>
+            <li class="section-item">
+              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/image-gallery/" class="section-links" target="_blank">Random Image Gallery</a>
+            </li>
 
-            <section class="section" id="languages">
-                <h2 class="section-title">Languages</h2>
+            <li class="section-item">
+              <a href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/nonograms/" class="section-links" target="_blank">Japanese puzzle game (nonograms)</a>
+            </li>
+          </ul> 
+      </section>
 
-                <ul class="section-list">
-                    <li class="section-item">Russian - native</li>
-                    <li class="section-item">English - pre-intermediate</li>
-                </ul>
-            </section>
-        </div>
-    </main>
+      <section class="section" id="personal-qualities">
+        <h2 class="section-title">Personal qualities</h2>
 
-    <footer class="footer">
-        <div>
-            2024
-        </div>
-    </footer>
+        <ul class="section-list">
+          <li class="section-item">Responsible</li>
+          <li class="section-item">Attentive</li>
+          <li class="section-item">Punctual</li>
+        </ul>
+      </section>
 
-    <script src="./index.js"></script>
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
+
+        <ul class="section-list">
+          <li class="section-item">Russian - native</li>
+          <li class="section-item">English - pre-intermediate</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">2024</footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
 
