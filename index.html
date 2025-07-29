@@ -3,184 +3,303 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="shortcut icon" href="./assets/img/serjoro.jpg" type="image/x-icon">
   <title>serjo</title>
-
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/serjoro.ico">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#about-me" class="nav-links">About me</a></li>
-        <li class="nav-item"><a href="#education" class="nav-links">Education</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-links">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-links">Projects</a></li>
-        <li class="nav-item"><a href="#personal-qualities" class="nav-links">Personal qualities</a></li>
-        <li class="nav-item"><a href="#languages" class="nav-links">Languages</a></li>
-      </ul>
-    </nav>
-    <div class="toggle">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="container main-container">
-      <section class="section section-profile">
-        <img src="assets/img/serjo.jpg" alt="Error! The photo didn't load!" class="profile-photo">
-      </section>
-
-      <section class="section contacts" id="contacts">
-        <h1 class="main-title">Hi, I&#8217;m Serjo</h1>
-        <h2 class="section-subtitle">junior developer</h2>
-
-        <section class="contacts-list">
-          <a href="mailto:serjobor@yandex.ru" class="contacts-links">
-            <img src="./assets/ico/email-ico.png" alt="Error! The email-ico didn't load!">
-          </a>
-
-          <a href="https://github.com/serjobor" class="contacts-links" target="_blank">
-            <img src="./assets/ico/github-ico.png" alt="Error! The github-ico didn't load!">
-          </a>
-
-          <a href="https://t.me/serjobor" class="contacts-links" target="_blank">
-            <img src="./assets/ico/telegram-ico.png" alt="Error! The telegram-ico didn't load!">
-          </a>
-        </section>
-
-      </section>
-
-      <section class="section text-justify" id="about-me">
-        <h2 class="section-title">About me</h2>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-content">
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#profile" class="nav-link">Профиль</a></li>
+            <li><a href="#experience" class="nav-link">Опыт</a></li>
+            <li><a href="#education" class="nav-link">Образование</a></li>
+            <li><a href="#skills" class="nav-link">Навыки</a></li>
+            <li><a href="#about" class="nav-link">О себе</a></li>
+          </ul>
+        </nav>
         
-        <span>I graduated with honors from my bachelor's degree. During my studies, I managed to try myself in the following areas:</span>
-        
-        <ul class="work-list">
-          <li class="work-item">Writing window and console applications using algorithms and data processing structures, OOP (C/C++)</li>
-          <li class="work-item">Working with relational databases: creating Databases, tables, writing queries, triggers and functions (Access; DBeaver + Python)</li>
-          <li class="work-item">Website layout using HTML, CSS and JS.</li>
-        </ul>
+        <div class="theme-toggle">
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
-        <span>I am currently studying for a master's degree at the ITMO Institute, where I am actively studying web-technologies and continuing to consolidate the knowledge I have already gained.</span>
-        
-      </section>
-      
-      <section class="section" id="education">
-        <h2 class="section-title">Education</h2>
-
-        <ul class="section-list">
-          <li class="">
-            <b>Bachelor&#8217;s degree</b> from 
-            <a href="https://guap.ru/" class="section-links" target="_blank">SUAI</a>  
-            (budget, 2020-2024)
-          </li>
-          <li class="section-item">Faculty: Institute of Fundamental Training and Technological Innovations</li>
-          <li class="section-item">Specialty: <b>Applied Mathematics and Computer Science</b> </li>
-          <li class="section-item">Average score: <b>5.0</b></li>
-        </ul>
-
-        <br>
-
-        <ul class="section-list">
-          <li class="">
-            <b>Master&#8217;s degree</b> from 
-            <a href="https://itmo.ru/" class="section-links" target="_blank">ITMO</a>  
-            (budget, 2024-2026)
-          </li>
-          <li class="section-item">Faculty: I: Software Engineering and Computer Engineering</li>
-          <li class="section-item">Specialty: <b>Web technologies</b> </li>
-          <li class="section-item">Average score: <b>5.0</b></li>
-        </ul>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Profile Section -->
+      <section id="profile" class="profile-section">
+        <div class="profile-info">
+          <div class="profile-image">
+            <img src="assets/img/serjoro.jpg" alt="Сергей Борисов" id="profile-img">
+          </div>
+          <div class="profile-details">
+            <div class="basic-info">
+              <h1 class="name">Борисов Сергей</h1>
+              <h2 class="title">Frontend разработчик</h2>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург</p>
+            </div>
+            <div class="contact-info">
+              <a href="mailto:serjobor@yandex.ru" class="contact-link">
+                <i class="fas fa-envelope"></i> serjobor@yandex.ru
+              </a>
+              <a href="https://t.me/serjobor" class="contact-link" target="_blank">
+                <i class="fab fa-telegram"></i> @serjobor
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section" id="skills">
-        <h2 class="section-title">Skills</h2>
+      <div class="content-grid">
+        <!-- Left Column -->
+        <div class="left-column">
+          <!-- Experience Section -->
+          <section id="experience" class="section">
+            <h3 class="section-title">
+              <i class="fas fa-briefcase"></i>
+              Опыт
+            </h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <h4 class="job-title">РАЗРАБОТКА FRONTEND</h4>
+                  <span class="company">ИТ-ЛАГЕРЬ Т1</span>
+                  <span class="period">2025</span>
+                </div>
+                <ul class="job-description">
+                  <li>Разработан 
+                    <a href="https://github.com/serjobor/Task-manager-React-TS-" target="_blank">"Менеджер задач"</a> 
+                    с клиент-серверным взаимодействием</li>
+                  <li>Работа с формами и аутентификацией</li>
+                  <li>Технологии: Vite, React + TS, React Router v6, Redux/MobX, Node.js + Express</li>
+                </ul>
+              </div>
 
-        <ul class="section-list">
-          <li class="section-item">Languages:     <b>C/C++,  JavaScript</b></li>
-          <li class="section-item">Web:         <b>HTML, CSS</b></li>
-          <li class="section-item">Databases:     <b>SQL, DBeaver</b></li>
-          <li class="section-item">Version control:   <b>GIT, Github</b></li>
-          <li class="section-item">Computer science:  <b>Algorithms, Data Structures, OOP</b></li>
-          <li class="section-item">Network:       <b>Client-Server Architecture, HTTP, JSON</b></li>
-          <li class="section-item">Tools:       <b>Chrome Devtools</b></li>
-          <!-- <li class="section-item">Methodologies: Agile, Scrum, Kanban</li> -->
-        </ul>
-      </section>
-      
-      <section class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <h4 class="job-title">JAVASCRIPT/ FRONTEND COURSE (1-2 этапы)</h4>
+                  <span class="company">RS SCHOOL</span>
+                  <span class="period">2025</span>
+                </div>
+                <ul class="job-description">
+                  <li>Углубленное изучение frontend разработки</li>
+                  <li>
+                    Сайт:
+                    <a 
+                      href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/christmas-shop/" 
+                      target="_blank">
+                        Christmas Shop
+                    </a>
+                    макет:
+                    <a 
+                      href="https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Christmas-Shop" 
+                      target="_blank">
+                        Figma
+                    </a>
+                  </li>
 
-          <ul class="section-list">
-            <li class="section-item">
-              Website:
-              <a href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/christmas-shop/" class="section-links" target="_blank">Christmas Shop</a>
-              Design in
-              <a href="https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Christmas-Shop" class="section-links" target="_blank">figma</a>
-            </li>
+                  <li>
+                    <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/audio-player/" 
+                      target="_blank">
+                        Audio Player
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://serjobor.github.io/cssMemeSlider/cssMemeSlider/index.html" 
+                      target="_blank">
+                      Only CSS Slider
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/image-gallery/" 
+                      target="_blank">
+                      Random Image Gallery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/nonograms/" 
+                      target="_blank">
+                      Japanese puzzle game (nonograms)
+                    </a>
+                  </li>
 
-            <li class="section-item">
-              Website:
-              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/shelter" class="section-links" target="_blank">Shelter</a>
-              Design in
-              <a href="https://www.figma.com/design/Yk6EnbY63FyG2PJTFkJDMh/shelter" class="section-links" target="_blank">figma</a>
-            </li>
+                </ul>
+              </div>
 
-            <li class="section-item">
-              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/audio-player/" class="section-links" target="_blank">Audio Player</a>
-            </li>
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <h4 class="job-title">JAVASCRIPT/ PRE-SCHOOL</h4>
+                  <span class="company">RS SCHOOL</span>
+                  <span class="period">2024</span>
+                </div>
+                <ul class="job-description">
+                  <li>Базовые навыки HTML, CSS, JS</li>
+                  <li>Dev Tools, VS Code, Figma</li>
+                  <li>
+                    Сайт:
+                    <a 
+                      href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/shelter/" 
+                      target="_blank">
+                      Shelter
+                    </a>
+                    макет:
+                    <a 
+                      href="https://www.figma.com/design/Yk6EnbY63FyG2PJTFkJDMh/shelter" 
+                      target="_blank">
+                        Figma
+                    </a>
+                  </li>
 
-            <li class="section-item">
-              <a href="https://serjobor.github.io/cssMemeSlider/cssMemeSlider/index.html" class="section-links" target="_blank">Only CSS Slider</a>
-            </li>
+                </ul>
+              </div>
 
-            <li class="section-item">
-              <a href="https://rolling-scopes-school.github.io/serjobor-JSFEPRESCHOOL2024Q2/image-gallery/" class="section-links" target="_blank">Random Image Gallery</a>
-            </li>
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <h4 class="job-title">QT/QML РАЗРАБОТЧИК</h4>
+                  <span class="company">НЕОТЕК МАРИН</span>
+                  <span class="period">2023</span>
+                </div>
+                <ul class="job-description">
+                  <li>Интеграция функционала в клиентскую часть приложения</li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-            <li class="section-item">
-              <a href="https://rolling-scopes-school.github.io/serjobor-JSFE2024Q4/nonograms/" class="section-links" target="_blank">Japanese puzzle game (nonograms)</a>
-            </li>
-          </ul> 
-      </section>
+          <!-- About Section -->
+          <section id="about" class="section">
+            <h3 class="section-title">
+              <i class="fas fa-user"></i>
+              О себе
+            </h3>
+            <p class="about-text">
+              Начинающий frontend разработчик. Люблю создавать красивые и функциональные веб-приложения.
+              Также занимаюсь спортом и веду активный образ жизни.
+            </p>
+          </section>
+        </div>
 
-      <section class="section" id="personal-qualities">
-        <h2 class="section-title">Personal qualities</h2>
+        <!-- Right Column -->
+        <div class="right-column">
+          <!-- Skills Section -->
+          <section id="skills" class="section">
+            <h3 class="section-title">
+              <i class="fas fa-code"></i>
+              Навыки
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4 class="skill-category-title">Языки программирования</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">TypeScript</span>
+                </div>
+              </div>
 
-        <ul class="section-list">
-          <li class="section-item">Responsible</li>
-          <li class="section-item">Attentive</li>
-          <li class="section-item">Punctual</li>
-        </ul>
-      </section>
+              <div class="skill-category">
+                <h4 class="skill-category-title">Фреймворки</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                </div>
+              </div>
 
-      <section class="section" id="languages">
-        <h2 class="section-title">Languages</h2>
+              <div class="skill-category">
+                <h4 class="skill-category-title">State-менеджеры</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Redux</span>
+                  <span class="skill-tag">MobX</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4 class="skill-category-title">Веб</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">HTTP</span>
+                  <span class="skill-tag">JSON</span>
+                </div>
+              </div>
 
-        <ul class="section-list">
-          <li class="section-item">Russian - native</li>
-          <li class="section-item">English - pre-intermediate</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+              <div class="skill-category">
+                <h4 class="skill-category-title">Стилизация</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">CSS Modules</span>
+                  <span class="skill-tag">SASS/LESS</span>
+                </div>
+              </div>
 
-  <footer class="footer">2024</footer>
+              <div class="skill-category">
+                <h4 class="skill-category-title">Маршрутизация</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">React Router v6</span>
+                </div>
+              </div>
 
-  <script src="./index.js"></script>
+              <div class="skill-category">
+                <h4 class="skill-category-title">Базы данных</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">DBeaver</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4 class="skill-category-title">Инструменты</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">GitHub</span>
+                  <span class="skill-tag">Figma</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education Section -->
+          <section id="education" class="section">
+            <h3 class="section-title">
+              <i class="fas fa-graduation-cap"></i>
+              Образование
+            </h3>
+            <div class="education-item">
+              <div class="education-header">
+                <h4 class="degree">ДИПЛОМ МАГИСТРА</h4>
+                <span class="institution">ИТМО</span>
+                <span class="period">2024-2026</span>
+              </div>
+              <p class="program">Программа: Веб-технологии</p>
+              <p class="gpa">Средний балл: 5.0</p>
+            </div>
+            <div class="education-item">
+              <div class="education-header">
+                <h4 class="degree">ДИПЛОМ БАКАЛАВРА</h4>
+                <span class="institution">ГУАП</span>
+                <span class="period">2020-2024</span>
+              </div>
+              <p class="program">Программа: Прикладная математика и информатика</p>
+              <p class="gpa">Средний балл: 5.0</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; updated 2025</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
-
-
-<!--
-<a href="https://www.flaticon.com/ru/free-icons/github" title="github иконки">Github иконки от Freepik - Flaticon</a>
--->
