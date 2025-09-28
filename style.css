@@ -172,7 +172,8 @@ body {
 }
 
 .contact-info {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
